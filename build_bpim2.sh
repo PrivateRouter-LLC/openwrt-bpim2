@@ -5,7 +5,7 @@ BUILD_VERSION="22.03.2"
 BUILDER="https://downloads.openwrt.org/releases/${BUILD_VERSION}/targets/sunxi/cortexa7/openwrt-imagebuilder-${BUILD_VERSION}-sunxi-cortexa7.Linux-x86_64.tar.xz"
 KERNEL_PARTSIZE=128 #Kernel-Partitionsize in MB
 ROOTFS_PARTSIZE=4096 #Rootfs-Partitionsize in MB
-BASEDIR=$(dirname "$0")
+BASEDIR=$(realpath "$0" | xargs dirname)
 
 # download image builder
 if [ ! -f "${BUILDER##*/}" ]; then

@@ -43,6 +43,6 @@ make image  PROFILE="sinovoip_bananapi-m2-berry" \
                      kmod-usb-net-cdc-ether mount-utils kmod-rtl8xxxu \
                      kmod-rtl8xxxu rtl8188eu-firmware kmod-rtl8192cu \
                      adblock luci-app-adblock luci-app-commands kmod-fs-squashfs squashfs-tools-unsquashfs squashfs-tools-mksquashfs \
-                     kmod-fs-f2fs kmod-fs-vfat" \
+                     kmod-fs-f2fs kmod-fs-vfat git git-http jq" \
             FILES="${BASEDIR}/files/" \
             BIN_DIR="${OUTPUT}"
